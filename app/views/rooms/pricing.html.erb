@@ -10,6 +10,17 @@
       <div class="panel-body">
         <div class="container">
           <%= form for @room do |f| %>
+
+            <div class="row">
+              <div class="form-group">
+                <label> Price</label>
+                <%= f.text_field :price, placeholder: "eg: $ 100", class: "form-control"%>
+              </div>
+            </div>
+            <div class="text-center">
+              <%=f.submit "save", class: "btn btn-form" %>
+            </div>
+
           <% end %>
 
         </div>

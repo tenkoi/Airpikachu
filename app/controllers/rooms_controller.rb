@@ -16,8 +16,12 @@ class RoomsController < ApplicationController
     if @room.save
       redirect_to listing_room_path(@room), notice: "Saved..."
     else
-      render :new, notice: "Something went wrong while saving..."
+      flash[:alert] = "Something went wrong..."
+      render :new
+    end
   end
+
+
 
   def show
 
@@ -62,4 +66,3 @@ class RoomsController < ApplicationController
       params.require(:room).permit(:home_type, :room_type, :acommodate, :bed_room, :bath_room, :listing_name, :summary, :address, :is_tv, :is_kitchen, :is_air, :is_heating, :is_internet, :price, :active)
     end
   end
-end
