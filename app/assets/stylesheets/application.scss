@@ -156,8 +156,8 @@ a {
   -moz-appearance: none;
   -webkit-appearance: none;
 }
-.form-group input [type="checkbox"]:checked:before{
-  content:'\2713';
+.form-group input[type="checkbox"]:checked:before {
+  content: '\2713';
   position: absolute;
   font-size: 0.95em;
   text-align: center;
@@ -288,10 +288,10 @@ a {
    display: block;
 
  }
- .panel-heading preview {
+ .panel-heading2 preview {
    padding: 0;
  }
 
- .panel-heading.preview img {
+ .panel-heading2.preview img {
    width: 100%;
  }
