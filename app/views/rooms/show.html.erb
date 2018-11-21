@@ -46,10 +46,10 @@
       </div>
       <div class="row text-center">
         <div class="col-md-3"><%= @room.home_type%></div>
-        <div class="col-md-3"><%= @room.acommodate%></div>
-        <div class="col-md-3"><%= @room.bed_room%></div>
-        <div class="col-md-3"><%= @room.bath_room%></div>
-        <div class="col-md-3"><%= @room.home_type%></div>
+        <div class="col-md-3"><%= pluralize(@room.acommodate,"Guest")%></div>
+        <div class="col-md-3"><%= pluralize(@room.bed_room,"Bedroom")%></div>
+        <div class="col-md-3"><%= pluralize(@room.bath_room,"Bathroom")%></div>
+
       </div>
 
     </div>
@@ -57,12 +57,36 @@
 
     <!-- About -->
     <div class="row">
+      <div class="col-md-12">
+        <h3>About This Listing</h3>
+        <p><%= @room.summary %></p>
+      </div>
 
     </div>
     <hr/>
 
     <!-- Amenities -->
     <div class="row">
+      <div class="col-md-3">
+        <h4>Ammenities</h4>
+      </div>
+      <div class="col-md-9">
+        <div class="row">
+          <div class="col-md-6">
+            <ul class="amenies"></ul>
+            <li>TV</li>
+            <li>Kitchen/li>
+            <li>Internet</li>
+          </div>
+          <div class="col-md-6">
+            <ul class="amenies"></ul>
+            <li>TV</li>
+            <li>Kitchen/li>
+            <li>Internet</li>
+          </div>
+        </div>
+
+      </div>
 
     </div>
     <hr/>
