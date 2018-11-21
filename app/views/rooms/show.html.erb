@@ -1,0 +1,82 @@
+<!--image-->
+<div class="row">
+  <div class="col-md-12">
+    <%= image_tag @room.cover_photo(nil), width: "100%" %>
+
+  </div>
+</div>
+<br/>
+
+<div class="row">
+  <!-- LEFT PANEL -->
+  <div class="col-md-8">
+
+    <!-- Listing Name -->
+    <div class="row">
+      <div class="col-md-8">
+        <h1><%= @room.listing_name %></h1>
+        <%= @room.address %>
+
+      </div>
+      <div class="col-md-4 text-center">
+        <%= image_tag avatar_url(@room.user), class: "img-circle avatar-large"%><br/><br/>
+        <%= @room.user.fullname %>
+
+      </div>
+
+    </div>
+    <hr/>
+
+
+    <!-- Room info -->
+    <div class="row text-babu">
+      <div class="row text-center row-space-1">
+        <div class="row col-md-3">
+          <i class="fa fa-home fa-2x"></i>
+        </div>
+        <div class="row col-md-3">
+          <i class="fa fa-user-circle-o fa-2x"></i>
+        </div>
+        <div class="row col-md-3">
+          <i class="fa fa-bed fa-2x"></i>
+        </div>
+        <div class="row col-md-3">
+          <i class="fa fa-bath fa-2x"></i>
+        </div>
+      </div>
+      <div class="row text-center">
+        <div class="col-md-3"><%= @room.home_type%></div>
+        <div class="col-md-3"><%= @room.acommodate%></div>
+        <div class="col-md-3"><%= @room.bed_room%></div>
+        <div class="col-md-3"><%= @room.bath_room%></div>
+        <div class="col-md-3"><%= @room.home_type%></div>
+      </div>
+
+    </div>
+    <hr/>
+
+    <!-- About -->
+    <div class="row">
+
+    </div>
+    <hr/>
+
+    <!-- Amenities -->
+    <div class="row">
+
+    </div>
+    <hr/>
+
+    <!-- Carousel -->
+    <div class="row">
+
+    </div>
+    <hr/>
+
+  </div>
+  <!-- RIGHT PANEL -->
+  <div class="col-md-4">
+  <!-- Reservation forms -->
+
+  </div>
+</div>
